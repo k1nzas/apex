@@ -1,0 +1,440 @@
+@charset"utf-8";
+*{
+	margin:0;
+	padding:0;
+	outline:none;
+}
+html{height:100%;}
+body{
+	width:100%;
+	height:100%;
+	color:white;
+	front-family:"Segoe UI",Arial,sans-serif;
+	front-size:1em;
+	line-height:135%;
+	float:left;
+}
+@media(min-width:800px){
+#wraper #leftCol{
+ width:90%;
+ margin-left:5%;
+ float:left;
+}}
+@media(max-width:799px){
+#wraper #rightCol{
+ width:90%;
+ margin-left:5%;
+ float:left;
+}}
+img{
+	max-width:100%;
+	height:auto;
+	width:auto\9
+}
+a{
+	color:black;
+	text-decoration:none;
+	-webkit-transition:all.6s ease;
+	-moz-transition:all.6s ease;
+	-o-transition:all.6s ease;
+	-ms-transition:all.6s ease;
+	transition:all.6s ease;
+}
+a:hover{
+	color:#efdea0;
+}
+a, a:hover{
+	-webkit-transition:all.6s ease;
+	-moz-transition:all.6s ease;
+	-o-transition:all.6s ease;
+	-ms-transition:all.6s ease;
+	transition:all.6s ease;
+}
+.clear{
+	clear:both;
+}
+header{
+	width:98%;
+	height:45px;
+	float:left;
+	padding:1%;
+	background-color:#e6322a;
+	border-bottom:2px solid black;
+	margin-bottom:0px;
+}
+header #logo{
+	width:25%;
+	float:left;
+
+}
+header #logo a{
+    color:#20252a;
+	font-size:2em;
+	front-family:Times New Roman,sans-serif;
+}
+header #menuHead{
+    width:24%;
+	float:left;
+	text-align:center;
+	font-size:1.1em
+}
+header #menuHead div{
+	float:left;
+	padding:5px;
+	background-color:#ed7318;
+	border-radius:5px;
+	color:#000000;
+}
+header #menuHead div:hover{
+	background-color:#ffc400;
+}
+header #tt div{
+	float:right;
+	padding:5px;
+	background-color:#ed7318;
+	border-radius:5px;
+	color:#000000;
+}
+header #tt div:hover{
+	background-color:#ffc400;
+}
+header #tt{
+	width:25%;
+	float:left;
+	text-align:left;
+	font-size:1.2em
+}
+header #regAuth{
+	width:25%;
+	float:left;
+	text-align:right;
+	font-size:1.1em
+}
+header #regAuth div{
+	float:right;
+	padding:5px;
+	background-color:#ed7318;
+	border-radius:5px;
+	color:#000000;
+}
+header #regAuth div:hover{
+	background-color:#ffc400;
+}
+
+#wrapper{
+	width:100%;
+	float:left;
+	
+}
+#wrapper #leftCol{
+	width:100%;
+	margin-right:10%;
+	float:left;
+	margin-bottom:1px;
+} 
+#wrapper #leftCol #bigArticle{
+	width:100%; 
+	background-color:#e6322a;
+	color:black;
+}
+
+#wrapper #rightCol {
+	width:100%;
+	float:left;
+}
+#wrapper #rightCol .banner{
+	width:100%;
+	float:left;
+	margin-right:10%;
+
+}
+footer{
+	width:98%;
+	float:left;
+	padding:1%;
+	background-color:#fafafa;
+	border-top:2px solid green;
+	color:black; 
+}
+footer #social{
+	width:50%;
+	float:left;
+	text-align:right;
+}
+
+footer #rights{
+	float:right;
+	width:50%;
+	text-align:right;
+	front-size:1.1em;
+}
+footer #social img{
+	width:30px;
+	height:30px;
+	float:left;
+	margin-right:5px;
+}
+footer #social twitter.png{
+	width:10px;
+	float:left;
+	height:10px;
+	margin-right:5px;
+	
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+
+$bg:#1a1f25;
+$button:#e6b333;
+$border:#22272d;
+
+
+
+*, *:after, *:before{
+  box-sizing:border-box;
+}
+
+html, body {background:$bg;font-family: 'Roboto', sans-serif;}
+
+.clear {clear:both;}
+
+#man-people-user, #lock-locker {
+  fill:black;  
+}
+
+.wrapper{
+  width:300px; 
+  margin:12% auto;
+}
+
+form {position:relative;}
+
+.clear {clear:both;}
+.sign-in {
+  float:left; 
+  color:black;
+  font-size:1.3em;
+}
+.button {
+  float:right;
+  color:black;
+  border:1px solid $border;
+  padding:7px 15px;
+  border-radius:3px;
+  font-size:0.8em;
+  cursor:pointer; 
+}
+.button:hover {color:#d3d3d3}
+.lock {
+  position:absolute;
+  width:20px;
+  height:20px;
+  margin-top:10px;
+  padding:7px; 
+  left:5px;
+  &::after {
+    content:""; 
+    width:1px;
+    height:30px;
+    position:absolute;
+    background:$border; 
+    top:0px; 
+    left:100%; 
+  }
+}
+.user {
+ 
+  position:absolute;
+  width:20px;
+  height:20px;
+  margin-top:10px;
+  padding:7px;
+  left:5px;
+  &::after {
+    content:""; 
+    width:1px;
+    height:30px;
+    position:absolute;
+    background:$border; 
+    top:0px; 
+    left:100%; 
+  }
+}
+
+input {
+  width:100%;
+  padding:5px;
+  height:40px;
+  border-radius:3px;
+  margin:5px 0;
+  outline: none;
+}
+input[type="text"]:focus, input[type="password"]:focus {
+  border:1px solid white;
+  box-shadow:none;
+}
+.user-input:focus .user{
+  background:black !important;
+   
+} 
+
+
+input[type="text"]{
+  background:transparent; 
+  border:2px solid $border;
+  padding-left:45px;
+  color:$button;
+}
+input[type="password"]{
+  background:transparent; 
+  border:2px solid $border;
+  padding-left:45px;
+  color:$button;
+}
+input[type="submit"]{
+  background:$button; 
+  border:none;
+  color:black;
+  text-align:center;
+  font-size:0.8em;
+  cursor:pointer;
+}
+
+input[type="radio"]{
+  display:none; 
+}
+.radio-check {
+  width:50px;
+  height:20px;
+  border:1px solid $border;
+  border-radius:30px;
+  margin-top:10px;
+  float:left;
+  text-align:center;
+  padding:4px 0;
+  color:$button;
+  font-size:0.65em;
+  position:relative;
+  label{
+    margin:0 2px;
+    cursor:pointer;
+  }
+  .switch-selection{
+    display:block;
+    position: absolute;
+    width:11px;
+    height:11px; 
+    border-radius:50%;
+    background:#d3d3d3;
+    margin-top:-11px;
+    margin-left:11px; 
+    transition: 0.2s ease-out;
+  } 
+  
+}
+
+ .radio-yes:checked ~ .switch-selection{
+    margin-left:25px !important;
+  } 
+  
+
+.check-label {
+  font-size:0.8em;
+  color:black;
+  margin-top:10px;
+  float:left;
+  padding:3px 0;
+  margin-left:10px;
+}
+
+
+.forgot-label {
+  font-size:0.8em;
+  color:black;
+  margin-top:10px;
+  float:right;
+  padding:3px 0;
+  cursor:pointer;
+}
+#wrapper #leftCol #messageShow{
+	front-size:1.2em;
+	float:left;
+	color:red;
+}
+
+.basenu_kopasku_texalom {
+  background-color: #cdd0d4;
+  border-radius: 10px;
+  color: #353434;
+  padding: 15px 20px 15px 78px;
+  position: relative;
+}
+
+.basenu_kopasku_texalom h3 {
+  margin: 0 0 0.25em 0;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #1d1c1c;
+}
+
+.basenu_kopasku_texalom .basenu_kopasku_texalom-denug p {
+  margin: 0 0 1em;
+}
+
+.basenu_kopasku_texalom .basenu_kopasku_texalom-denug > p:last-child {
+  margin-bottom: 0;
+}
+
+.basenu_kopasku_texalom.basenu_kopasku_texalom-denug p a {
+  color: #40a1d2;
+}
+
+.basenu_kopasku_texalom .basenu_kopasku_texalom-denug p a:hover {
+  color: #1d1b1b;
+}
+
+
+
+
+/* The sidebar menu */
+.sidenav {
+    width: 160px; /* Set the width of the sidebar */
+    position: absolute; /* Fixed Sidebar (stay in place on scroll) */
+    z-index:1; /* Stay on top */
+    top: 85; /* Stay at the top */
+    left: 0;
+    background-color:black; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top:20px;
+	text-align:left;
+	
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 30px 10px 20px 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color:black;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
